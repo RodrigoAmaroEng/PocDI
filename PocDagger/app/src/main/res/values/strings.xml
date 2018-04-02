@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PocDagger</string>
+    <string name="alcohol_price_input_desc">AlcoholPriceInput</string>
+    <string name="alcohol_price_label">Alcohol Price</string>
+    <string name="gas_price_input_desc">GasPriceInput</string>
+    <string name="gas_price_label">Gas Price</string>
+    <string name="performance_rate_input_desc">PerformanceRateInput</string>
+    <string name="performance_rate_label">Performance Rate</string>
+    <string name="result_label_desc">ResultLabel</string>
+    <string name="result_label">Go with</string>
+    <string name="fuel_gas">Gas</string>
+    <string name="fuel_alcohol">Alcohol</string>
+</resources>

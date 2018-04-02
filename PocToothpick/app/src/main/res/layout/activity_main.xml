@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             tools:context="br.eng.rodrigoamaro.poctoothpick.MainActivity">
+
+    <TextView
+        android:id="@+id/label_alcohol_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/edit_alcohol_price"
+        android:text="@string/alcohol_price_label"
+        app:layout_constraintStart_toStartOf="@+id/edit_alcohol_price"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_alcohol_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/alcohol_price_input_desc"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/edit_gas_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_alcohol_price"/>
+
+    <TextView
+        android:id="@+id/label_gas_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/edit_gas_price"
+        android:text="@string/gas_price_label"
+        app:layout_constraintStart_toStartOf="@+id/edit_gas_price"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_gas_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/gas_price_input_desc"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_alcohol_price"
+        app:layout_constraintTop_toBottomOf="@+id/label_gas_price"/>
+
+    <TextView
+        android:id="@+id/label_performance_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:labelFor="@id/edit_performance_rate"
+        android:text="@string/performance_rate_label"
+        app:layout_constraintStart_toStartOf="@+id/edit_performance_rate"
+        app:layout_constraintTop_toBottomOf="@+id/edit_alcohol_price"/>
+
+    <EditText
+        android:id="@+id/edit_performance_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/performance_rate_input_desc"
+        android:inputType="numberDecimal"
+        android:minWidth="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_performance_rate"/>
+
+    <TextView
+        android:id="@+id/label_for_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:labelFor="@id/label_result"
+        android:text="@string/result_label"
+        app:layout_constraintBottom_toTopOf="@+id/label_result"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/label_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/result_label_desc"
+        android:gravity="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

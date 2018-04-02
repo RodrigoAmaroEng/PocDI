@@ -1,0 +1,5 @@
+
+}squid:S4165"cRemove this useless assignment; "scope" already holds the assigned value along all execution paths.(ŠĞ÷üÿÿÿÿ
+zsquid:S1488"eImmediately return this expression instead of assigning it to the temporary variable "mainPresenter".(˜ÿˆ¸
+hsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(şÙãİøÿÿÿÿ
+ssquid:UselessImportCheck"QRemove this unnecessary import: java.lang classes are always implicitly imported.(ú®Ú±
